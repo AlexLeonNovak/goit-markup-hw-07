@@ -1,14 +1,19 @@
 .header {
   padding: 25px 0;
-  border-bottom: 1px solid var(--light-grey);
+  border-bottom: 1px solid getColor(light-grey);
+  .contacts {
+    display: inline-flex;
+  }
 }
-.header .contacts {
-  display: inline-flex;
+
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
 }
+
 .contacts-item-link {
   display: inline-flex;
   align-items: center;
-  color: var(--grey);
+  color: getColor('grey');
 }
 .contact-icon {
   width: 16px;
@@ -34,7 +39,7 @@
 .menu-item .menu-item-link:hover,
 .menu-item .menu-item-link:focus
 {
-  color: var(--blue);
+  color: getColor(blue);
 }
 .menu-item.active{
   position: relative;
@@ -44,12 +49,9 @@
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  background-color: var(--blue);
+  background-color: getColor(blue);
 
   position: absolute;
   bottom: -32px;
   left: 0;
-}
-.contacts-item:not(:last-child) {
-  margin-right: 50px;
 }
