@@ -878,7 +878,7 @@ h3 {
 .field-input:focus {
   border-color: #2196f3;
 }
-.field-input :focus + .field-icon {
+.field-input:focus + .field-icon {
   fill: #2196f3;
 }
 

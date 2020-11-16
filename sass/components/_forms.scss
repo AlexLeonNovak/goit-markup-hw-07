@@ -82,7 +82,7 @@
   &:focus {
     border-color: getColor(blue);
   }
-  :focus + .field-icon {
+  &:focus + .field-icon {
     fill: getColor(blue);
   }
 }
